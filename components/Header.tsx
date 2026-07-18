@@ -2,22 +2,9 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
 
 export default function Header() {
   const pathname = usePathname();
-  const [yoursOpen, setYoursOpen] = useState(false);
-  const yoursRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (yoursRef.current && !yoursRef.current.contains(event.target as Node)) {
-        setYoursOpen(false);
-      }
-    }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
 
   const linkClass = (href: string) =>
     `transition-colors hover:text-foreground ${pathname === href ? "text-foreground" : ""}`;
@@ -39,36 +26,14 @@ export default function Header() {
           work
         </Link>
 
-        <div className="relative" ref={yoursRef}>
-          <button
-            type="button"
-            onClick={() => setYoursOpen((open) => !open)}
-            aria-expanded={yoursOpen}
-            className="rounded-full border border-brand bg-white px-3 py-1 normal-case tracking-normal text-brand transition-colors hover:bg-secondary"
-          >
-            Yours?
-          </button>
-          {yoursOpen && (
-            <div className="absolute left-1/2 top-full z-40 mt-3 w-40 -translate-x-1/2 rounded-xl border border-border bg-background p-2 shadow-xl">
-              <Link
-                href="/audit"
-                onClick={() => setYoursOpen(false)}
-                className="flex items-center gap-2 rounded-lg px-3 py-2 text-[11px] normal-case tracking-normal text-foreground transition-colors hover:bg-secondary"
-              >
-                <span className="inline-block h-1.5 w-1.5 rounded-full bg-brand" aria-hidden />
-                audit
-              </Link>
-              <Link
-                href="/retainer"
-                onClick={() => setYoursOpen(false)}
-                className="flex items-center gap-2 rounded-lg px-3 py-2 text-[11px] normal-case tracking-normal text-foreground transition-colors hover:bg-secondary"
-              >
-                <span className="inline-block h-1.5 w-1.5 rounded-full bg-brand" aria-hidden />
-                retainer
-              </Link>
-            </div>
-          )}
-        </div>
+        <a
+          href="https://seesaw.thefulcrum.club"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-full border border-brand bg-white px-3 py-1 normal-case tracking-normal text-brand transition-colors hover:bg-secondary"
+        >
+          seesaw
+        </a>
 
         <Link href="/manifesto" className={linkClass("/manifesto")}>
           manifesto
