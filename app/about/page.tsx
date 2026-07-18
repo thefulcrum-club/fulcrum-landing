@@ -168,15 +168,28 @@ export default function AboutPage() {
               to think about it.
             </p>
 
+            <dl className="grid grid-cols-[120px_1fr] gap-x-8 gap-y-3 pt-6 font-mono text-[11px] uppercase tracking-[0.24em] text-muted-foreground">
+              <dt>contact</dt>
+              <dd className="text-foreground">tech@thefulcrum.club</dd>
+            </dl>
+
             <div className="pt-6">
               <a
-                href="https://aharshit123456.space"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-mono text-[11px] uppercase tracking-[0.28em] text-muted-foreground hover:text-foreground"
+                href="mailto:tech@thefulcrum.club"
+                className="inline-block font-serif text-2xl italic hover:text-brand-glow"
               >
-                aharshit123456.space →
+                tech@thefulcrum.club
               </a>
+              <div className="mt-3">
+                <a
+                  href="https://aharshit123456.space"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-mono text-[11px] uppercase tracking-[0.28em] text-muted-foreground hover:text-foreground"
+                >
+                  aharshit123456.space →
+                </a>
+              </div>
             </div>
           </div>
         </div>
