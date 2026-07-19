@@ -30,7 +30,7 @@ export default function Header() {
           href="https://seesaw.thefulcrum.club"
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-full border border-brand bg-white px-3 py-1 normal-case tracking-normal text-brand transition-colors hover:bg-secondary"
+          className="glow-pulse rounded-full border border-brand bg-white px-3 py-1 normal-case tracking-normal text-brand transition-colors hover:bg-secondary"
         >
           seesaw
         </a>

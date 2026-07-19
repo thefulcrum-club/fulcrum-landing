@@ -79,3 +79,16 @@ body {
 .gradient-line {
   background: var(--gradient-line);
 }
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 1px var(--brand), 0 0 10px 1px #6187ec66, 0 0 18px 4px #1612d340;
+  }
+  50% {
+    box-shadow: 0 0 0 1px var(--brand-glow), 0 0 16px 3px #6187ec99, 0 0 30px 8px #1612d366;
+  }
+}
+
+.glow-pulse {
+  animation: glow-pulse 2.6s ease-in-out infinite;
+}
