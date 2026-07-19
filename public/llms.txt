@@ -1,0 +1,24 @@
+# fulcrum.
+
+> fulcrum. is a small strategic consulting agency for founders. We find the real bottleneck holding a business back, give a plain-English plan to fix it, and — for the few we keep working with — stay in the room until execution turns into measurable progress. We are small on purpose and price per engagement, not per suite.
+
+fulcrum. is not a dashboard, a report generator, or a big-firm consultancy. It is a small team that does short, honest audits and then, optionally, stays on as a long-term operating partner. AI is part of how fulcrum. works (keeping a live read on a client's business between conversations); it is not the product being sold.
+
+## Core pages
+
+- [Home](https://thefulcrum.club/): positioning, FAQ, and how fulcrum. is priced.
+- [The Audit](https://thefulcrum.club/audit): the entry engagement — three days, fixed price, one plain-English bottleneck report.
+- [The Retainer](https://thefulcrum.club/retainer): the ongoing engagement — weekly presence and execution accountability after the audit.
+- [How We Work](https://thefulcrum.club/residency): the four-room engagement model end to end (audit → build → positioning → always-on read).
+- [About](https://thefulcrum.club/about): who founded fulcrum. and why.
+- [Manifesto](https://thefulcrum.club/manifesto): the founder's longer-form reasoning for why fulcrum. exists.
+- [Work](https://thefulcrum.club/work): case studies (early-stage, still being written).
+- [Trust & Privacy](https://thefulcrum.club/trust): what client data is collected and how it's handled.
+
+## Related product
+
+- [seesaw](https://seesaw.thefulcrum.club): fulcrum.'s market-research simulation tool — stress-tests a startup idea (market size, competitors, PMF signal) before a founder builds it. Built by the same team as a functional proof of the diagnostic engine fulcrum. runs for clients.
+
+## Contact
+
+founder@thefulcrum.club
