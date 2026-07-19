@@ -1,13 +1,12 @@
 import { ImageResponse } from "next/og";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 
 export const size = { width: 32, height: 32 };
 export const contentType = "image/png";
 
-const FONT_URL =
-  "https://fonts.gstatic.com/s/playfairdisplay/v40/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTbtY.ttf";
-
 export default async function Icon() {
-  const fontData = await fetch(FONT_URL).then((res) => res.arrayBuffer());
+  const fontData = await readFile(join(process.cwd(), "assets/fonts/PlayfairDisplay-Italic-600.ttf"));
 
   return new ImageResponse(
     (

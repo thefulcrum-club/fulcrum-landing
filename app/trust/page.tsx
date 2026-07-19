@@ -1,8 +1,24 @@
 import type { Metadata } from "next";
 
+const TITLE = "Trust & Privacy";
+const DESCRIPTION = "A short note on how fulcrum handles your data.";
+
 export const metadata: Metadata = {
-  title: "Trust & Privacy — fulcrum.",
-  description: "A short note on how fulcrum handles your data.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/trust" },
+  openGraph: {
+    title: `${TITLE} — fulcrum.`,
+    description: DESCRIPTION,
+    url: "/trust",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${TITLE} — fulcrum.`,
+    description: DESCRIPTION,
+  },
+  robots: { index: true, follow: true },
 };
 
 const sections = [

@@ -1,6 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import FaqAccordion from "@/components/FaqAccordion";
 import HeroBlobs from "@/components/HeroBlobs";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 const faqItems = [
   {
@@ -35,9 +40,26 @@ const faqItems = [
   },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer,
+    },
+  })),
+};
+
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       {/* HERO */}
       <section className="relative mx-auto flex min-h-[100vh] w-full max-w-[1400px] flex-col items-center justify-center px-6 pb-40 pt-10 text-center md:px-10">
         <HeroBlobs />

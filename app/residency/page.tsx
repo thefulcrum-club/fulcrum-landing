@@ -1,9 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const TITLE = "How We Work";
+const DESCRIPTION = "Four rooms. One conversation. How we work with founders.";
+
 export const metadata: Metadata = {
-  title: "Engagement. fulcrum.",
-  description: "Four rooms. One conversation. How we work with founders.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/residency" },
+  openGraph: {
+    title: `${TITLE} — fulcrum.`,
+    description: DESCRIPTION,
+    url: "/residency",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${TITLE} — fulcrum.`,
+    description: DESCRIPTION,
+  },
 };
 
 const rooms = [

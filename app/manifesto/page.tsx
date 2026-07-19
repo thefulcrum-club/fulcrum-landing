@@ -1,9 +1,24 @@
 import type { Metadata } from "next";
 
+const TITLE = "Manifesto";
+const DESCRIPTION =
+  "A letter from the founder on the quiet middle — why fulcrum. exists, and why we're building it small on purpose.";
+
 export const metadata: Metadata = {
-  title: "Manifesto — fulcrum.",
-  description:
-    "A letter from the founder on the quiet middle — why fulcrum. exists, and why we're building it small on purpose.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/manifesto" },
+  openGraph: {
+    title: `${TITLE} — fulcrum.`,
+    description: DESCRIPTION,
+    url: "/manifesto",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${TITLE} — fulcrum.`,
+    description: DESCRIPTION,
+  },
 };
 
 export default function ManifestoPage() {

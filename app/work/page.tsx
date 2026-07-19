@@ -1,8 +1,23 @@
 import type { Metadata } from "next";
 
+const TITLE = "Work";
+const DESCRIPTION = "The work is still being written. We're early on purpose.";
+
 export const metadata: Metadata = {
-  title: "Work — fulcrum.",
-  description: "The work is still being written. We're early on purpose.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/work" },
+  openGraph: {
+    title: `${TITLE} — fulcrum.`,
+    description: DESCRIPTION,
+    url: "/work",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${TITLE} — fulcrum.`,
+    description: DESCRIPTION,
+  },
 };
 
 export default function WorkPage() {

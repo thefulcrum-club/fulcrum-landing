@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The Audit — fulcrum.",
+  title: "The Audit",
   description: "Three days. Eyes wide open. We find the real bottleneck and give you a plain-English plan.",
+  alternates: { canonical: "/audit" },
   openGraph: {
+    title: "The Audit — fulcrum.",
+    description: "Three days inside your business. One honest read. Fixed price.",
+    url: "/audit",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "The Audit — fulcrum.",
     description: "Three days inside your business. One honest read. Fixed price.",
   },

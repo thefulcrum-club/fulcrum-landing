@@ -2,9 +2,17 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "About — fulcrum.",
+  title: "About",
   description: "A small agency. Founded by Anvit Thakur. Built for the obsessed.",
+  alternates: { canonical: "/about" },
   openGraph: {
+    title: "About — fulcrum.",
+    description: "A small agency. Founded by Anvit Thakur. Built for the obsessed.",
+    url: "/about",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "About — fulcrum.",
     description: "A small agency. Founded by Anvit Thakur. Built for the obsessed.",
   },

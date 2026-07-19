@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The Retainer — fulcrum.",
+  title: "The Retainer",
   description: "Weekly presence. Execution accountability. A long, trusted partner who already knows your story.",
+  alternates: { canonical: "/retainer" },
   openGraph: {
+    title: "The Retainer — fulcrum.",
+    description: "Most engagements end when the invoice does. Ours do not.",
+    url: "/retainer",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "The Retainer — fulcrum.",
     description: "Most engagements end when the invoice does. Ours do not.",
   },
